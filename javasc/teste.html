@@ -1,18 +1,25 @@
 <!doctype html>
 <html lang="pt-br">
 <head>
+  <style>
+    #um,#dois,#tres{
+      min-height:40px;
+      color:#FA2;
+    }
+    </style>
+  </style>
 </head>
 <body id="duto">
-<div onclick="alertar()">Alerta</div>
-<div onclick="confirmar()">Confirmação</div>
-<div onclick="digitar()">Prompt</div>
+<div id="um" onclick="alertar()">Alerta</div>
+<div id="dois" onclick="confirmar()">Confirmação</div>
+<div id="tres" onclick="digitar()">Prompt</div>
 <script>
   function alertar(){
     alert("Isso é um alerta, fique atento!");
   }
   function confirmar(){
    if( confirm("Você deseja mudar a cor da página?")){
-      document.getElementsById('duto')style.backgroundColor='blue';
+      document.getElementById('duto')style.backgroundColor='blue';
    }
   }
   function digitar(){
