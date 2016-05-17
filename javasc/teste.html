@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+</head>
+<body>
+<div onclick="alertar()">Alerta</div>
+<div onclick="confirmar()">Confirmação</div>
+<div onclick="digitar()">Prompt</div>
+<script>
+  function alertar(){
+    alert("Isso é um alerta, fique atento!");
+  }
+  function confirmar(){
+   if( confirm("Você deseja mudar a cor da página?")){
+      document.style.backgroundColor='blue';
+   }
+  }
+  function digitar(){
+    prompt("Digite sua mensagem:");
+  }
+</script>
+</body>
+</html>
