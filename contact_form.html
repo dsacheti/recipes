@@ -4,7 +4,24 @@
     <meta charset="utf-8">
   <title>Details Dating Form</title>
   <style>
-  
+  body{
+	 font-family:Arial, Helvetica, sans-serif;
+  }
+    fieldset{
+      border:10px solid yellow;
+      background-color:#fcc;
+	  margin:10px;
+    }
+	.minimum{
+		margin:1px;
+		padding:2px;		
+		background-color:#900;	
+	}
+	.maximum{
+		margin:1px;
+		padding:2px;		
+		background-color:#303;	
+	}
   </style>
   </head>
   <body>
@@ -12,8 +29,8 @@
     <form enctype="multipart/fomr-data" id="details-form" method="post" action="http://ihome.ust.hk/~rossiter/cgi-bin/show_everything.php">
     <fieldset>
     <legend>Your Face</legend>
-      <label for="image">Your Image</label>
-      <input type="file" name="image"><br>
+      <label for="avatar">Your Image</label>
+      <input type="file" name="avatar"><br>
       <img id="preview" src="no_pic.jpg" alt="Picture of the persone" required>
     </fieldset>
     <fieldset>
@@ -41,9 +58,9 @@
     <fieldset>
     <legend>Your Indicators</legend>
       <label for="height">Height</label>
-       Short<input type="range" name="height" min="0" max="100">Tall<br>
+       <span class="minimum">Short</span><input type="range" name="height" min="0" max="100"><span class="maximum">Tall</span><br>
       <label for="salary">Salary</label>
-       Poor<input type="range" name="salary" min="0" max="100">Rich
+       <span class="minimum">Poor</span><input type="range" name="salary" min="0" max="100"><span class="maximum">Rich</span>
     </fieldset>
     <fieldset>
     <legendYour Contact Informationlegend>
