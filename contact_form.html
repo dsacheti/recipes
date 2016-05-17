@@ -1,6 +1,7 @@
 <!doctype html>
-<html>
+<html lang="en">
   <head>
+    <meta charset="utf-8">
   <title>Details Dating Form</title>
   <style>
   
@@ -22,17 +23,42 @@
       <label for="gender">Gender</label>
       <input type="radio" name="gender" value="male" required>Male <input type="radio" name="gender" value="female">Female<br>
       <label for="age">Age</label>
-      <input type="number" name="age" min="1" max="130"><br>
+      <input type="number" name="age" min="1" max="130" required><br>
+      <label for="birthdate">Date of Birth</label>
+      <input type="date" name="birthdate"><br>
+      <label for="favcolor">Favorite Color</label>
+      <input type="color" name="favcolor"><br>
+      <label for="countries">Country</label>
+      <select name="countries">
+        <option value="Argentina">Argentina</option>
+        <option value="Australia">Australia</option>
+        <option value="Azerbaijan">Azerbaijan</option>
+        <option value="Brazil">Brazil</option>
+        <option value="Bolivia">Bolivia</option>
+        <option value="Canada">Canada</option>
+      </select>
     </fieldset>
     <fieldset>
-    <legend></legend>
-    
+    <legend>Your Indicators</legend>
+      <label for="height">Height</label>
+      <input type="range" name="height" min="0" max="100"><br>
+      <label for="salary">Salary</label>
+      <input type="range" name="salary" min="0" max="100">
     </fieldset>
     <fieldset>
-    <legend></legend>
-    
+    <legendYour Contact Informationlegend>
+      <label for="email">Email</label>
+      <input type="email" name="email" required><br>
+      <label for="mobile">Mobile</label>
+      <input type="tel" name="mobile"><br>
+      <label for="address">Address</label>
+      <textarea name="address" cols="50" rows="5"></textarea><br>
+      <label for="contact">Method to Contact You</label>
+      <input type="checkbox" name="contact" value="email">Email 
+      <input type="checkbox" name="contact" value="whatsapp">WhatsApp
+      <input type="checkbox" name="contact" value="in-app">In-app Chat 
     </fieldset>
-    
+      <input type="submit" value="Submit">
     </form>
     <script src="https://www.cse.ust.hk/~rossiter/dating_web_site.js"></script>
   </body>
