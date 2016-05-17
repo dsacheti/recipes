@@ -25,12 +25,12 @@
 		background-color:#303;	
 	}
 	.left{
-		width:30%;
+		width:15%;
 		float:left;
 		text-align:right;
 	}
 	.right{
-		width:68%;
+		width:83%;
 		float:left;
 		text-align:left;
 	}
@@ -45,51 +45,64 @@
       		<label for="avatar">Your Image</label>
       	</div>
       	<div class="right">
-      		<input type="file" name="avatar"><br>
+      		<input type="file" name="avatar" required><br>
+      		<img id="preview" src="no_pic.jpg" alt="Picture of the persone">
       	</div>
-      <img id="preview" src="no_pic.jpg" alt="Picture of the persone" required>
+      
     </fieldset>
     <fieldset>
       <legend>Your General Details</legend>
-      <label for="name">Name</label>
-      <input type="text" name="name" required><br>
-      <label for="gender">Gender</label>
-      <input type="radio" name="gender" value="male" required>Male <input type="radio" name="gender" value="female">Female<br>
-      <label for="age">Age</label>
-      <input type="number" name="age" min="1" max="130" required><br>
-      <label for="birthdate">Date of Birth</label>
-      <input type="date" name="birthdate"><br>
-      <label for="favcolor">Favorite Color</label>
-      <input type="color" name="favcolor"><br>
-      <label for="countries">Country</label>
-      <select name="countries">
-        <option value="Argentina">Argentina</option>
-        <option value="Australia">Australia</option>
-        <option value="Azerbaijan">Azerbaijan</option>
-        <option value="Brazil">Brazil</option>
-        <option value="Bolivia">Bolivia</option>
-        <option value="Canada">Canada</option>
-      </select>
+      	<div class="left">
+      		<label for="name">Name</label><br>
+      		<label for="gender">Gender</label><br>
+      		<label for="age">Age</label><br>
+      		<label for="birthdate">Date of Birth</label><br>
+      		<label for="favcolor">Favorite Color</label><br>
+      		<label for="countries">Country</label><br>
+      	</div>
+      	<div class="right">
+      		<input type="text" name="name" required><br>
+      		<input type="radio" name="gender" value="male" required>Male <input type="radio" name="gender" value="female">Female<br>
+      		<input type="number" name="age" min="1" max="130" required><br>
+      		<input type="date" name="birthdate"><br>
+      		<input type="color" name="favcolor"><br>
+      		<select name="countries">
+        		<option value="Argentina">Argentina</option>
+        		<option value="Australia">Australia</option>
+        		<option value="Azerbaijan">Azerbaijan</option>
+        		<option value="Brazil">Brazil</option>
+        		<option value="Bolivia">Bolivia</option>
+        		<option value="Canada">Canada</option>
+      		</select>
+      	</div>
     </fieldset>
     <fieldset>
     <legend>Your Indicators</legend>
-      <label for="height">Height</label>
-       <span class="minimum">Short</span><input type="range" name="height" min="0" max="100"><span class="maximum">Tall</span><br>
-      <label for="salary">Salary</label>
-       <span class="minimum">Poor</span><input type="range" name="salary" min="0" max="100"><span class="maximum">Rich</span>
+    	<div class="left">
+      		<label for="height">Height</label><br>
+      		<label for="salary">Salary</label><br>
+      	</div>
+      	<div class="right">
+       		<span class="minimum">Short</span><input type="range" name="height" min="0" max="100"><span class="maximum">Tall</span><br>
+       		<span class="minimum">Poor</span><input type="range" name="salary" min="0" max="100"><span class="maximum">Rich</span><br>
+       	</div>
     </fieldset>
     <fieldset>
     <legend>Your Contact Information</legend>
-      <label for="email">Email</label>
-      <input type="email" name="email" required><br>
-      <label for="mobile">Mobile</label>
-      <input type="tel" name="mobile"><br>
-      <label for="address">Address</label>
-      <textarea name="address" cols="50" rows="5"></textarea><br>
-      <label for="contact">Method to Contact You</label>
-      <input type="checkbox" name="contact" value="email">Email 
-      <input type="checkbox" name="contact" value="whatsapp">WhatsApp
-      <input type="checkbox" name="contact" value="in-app">In-app Chat 
+      <div class="left">
+      	<label for="email">Email</label><br>
+      	<label for="mobile">Mobile</label><br>
+      	<label for="address">Address</label><br>
+      	<label for="contact">Method to Contact You</label><br>
+      </div>
+      <div class="right">
+      	<input type="email" name="email" required><br>
+      	<input type="tel" name="mobile"><br>
+      	<textarea name="address" cols="50" rows="5"></textarea><br>
+      	<input type="checkbox" name="contact" value="email">Email 
+      	<input type="checkbox" name="contact" value="whatsapp">WhatsApp
+      	<input type="checkbox" name="contact" value="in-app">In-app Chat
+      </div>
     </fieldset>
       <input type="submit" value="Submit">
     </form>
