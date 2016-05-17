@@ -2,7 +2,7 @@
 <html lang="pt-br">
 <head>
 </head>
-<body>
+<body id="duto">
 <div onclick="alertar()">Alerta</div>
 <div onclick="confirmar()">Confirmação</div>
 <div onclick="digitar()">Prompt</div>
@@ -12,7 +12,7 @@
   }
   function confirmar(){
    if( confirm("Você deseja mudar a cor da página?")){
-      document.style.backgroundColor='blue';
+      document.getElementsById('duto')style.backgroundColor='blue';
    }
   }
   function digitar(){
