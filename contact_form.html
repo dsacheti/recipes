@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+  <head>
+  <title>Details Dating Form</title>
+  <style>
+  
+  </style>
+  </head>
+  <body>
+    <h1>Please Enter Your Details For Our Dating Website</h1>
+    <form enctype="multipart/fomr-data" id="details-form" method="post" action="http://ihome.ust.hk/~rossiter/cgi-bin/show_everything.php">
+    <fieldset>
+    <legend>Your Face</legend>
+      <label for="image">Your Image</label>
+      <input type="file" name="image"><br>
+      <img id="preview" src="no_pic.jpg" alt="Picture of the persone" required>
+    </fieldset>
+    <fieldset>
+      <legend>Your General Details</legend>
+      <label for="name">Name</label>
+      <input type="text" name="name" required><br>
+      <label for="gender">Gender</label>
+      <input type="radio" name="gender" value="male" required>Male <input type="radio" name="gender" value="female">Female<br>
+      <label for="age">Age</label>
+      <input type="number" name="age" min="1" max="130"><br>
+    </fieldset>
+    <fieldset>
+    <legend></legend>
+    
+    </fieldset>
+    <fieldset>
+    <legend></legend>
+    
+    </fieldset>
+    
+    </form>
+    <script src="https://www.cse.ust.hk/~rossiter/dating_web_site.js"></script>
+  </body>
+</html>
