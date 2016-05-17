@@ -6,11 +6,17 @@
   <style>
   body{
 	 font-family:Arial, Helvetica, sans-serif;
+	 font-size:0.9rem;
+	 
+  }
+  #container{
+	margin-left:5%;  
   }
     fieldset{
       border:10px solid yellow;
       background-color:#fcc;
 	  margin:10px;
+	  width:80%;
     }
 	.minimum{
 		color:#FFF;
@@ -24,57 +30,71 @@
 		padding:2px;		
 		background-color:#303;	
 	}
+	table{
+		width:100%;	
+		
+	}
+	table td{
+		vertical-align:text-bottom;		
+		border:solid 1px #000;	
+		min-height:30px;
+	}
 	.left{
-		width:30%;
+		width:18%;
 		float:left;
 		text-align:right;
+		padding-top:4px;
+		padding-bottom:2px;		
+		padding-right:5px
 	}
 	.right{
-		width:68%;
+		width:80%;
 		float:left;
-		text-align:left;
+		text-align:left;		
+		padding-top:2px;
+		padding-bottom:2px;;
 	}
   </style>
   </head>
   <body>
+  <div id="container">
     <h1>Please Enter Your Details For Our Dating Website</h1>
     <form enctype="multipart/fomr-data" id="details-form" method="post" action="http://ihome.ust.hk/~rossiter/cgi-bin/show_everything.php">
     <fieldset>
-    <legend>Your Face</legend>
-    <table>
-    	<tr>
-        	<td class="left">
+    <legend>Your Face</legend>    
+    	<div>
+        	<div class="left">
       		<label for="avatar">Your Image</label>
-            </td>
+            </div>
       	
-      	<td class="right">
+      	<div class="right">
       		<input type="file" name="avatar" required><br>
       		<img id="preview" src="no_pic.jpg" alt="Picture of the persone">
-      	</td>
-      </tr>
-    </table>
+      	</div>
+      </div>    
     </fieldset>
     <fieldset>
       <legend>Your General Details</legend>
       <table>
-      	<tr>
-        	<td class="left"><label for="name">Name</label></td><td class="right"><input type="text" name="name" required></td>
-        </tr>
-        <tr>
-        	<td class="left"><label for="gender">Gender</label></td><td class="right"><input type="radio" name="gender" value="male" required>Male <input type="radio" name="gender" value="female">Female</td>
-        </tr>
-        <tr>
-        	<td class="left"><label for="age">Age</label></td><td class="right"><input type="number" name="age" min="1" max="130" required></td>
-        </tr>
-        <tr>
-        	<td class="left"><label for="birthdate">Date of Birth</label></td><td class="right"><input type="date" name="birthdate"></td>
-        </tr>
-        <tr>
-        	<td class="left"><label for="favcolor">Favorite Color</label></td><td class="right"><input type="color" name="favcolor"></td>
-        </tr>
-        <tr>
-        	<td class="right">
-              <label for="countries">Country</label></td><td><select name="countries">
+      	<div>
+        	<div class="left"><label for="name">Name</label></div><div class="right"><input type="text" name="name" required></div>
+        </div>
+        <div>
+        	<div class="left"><label for="gender">Gender</label></div><div class="right"><input type="radio" name="gender" value="male" required>Male <input type="radio" name="gender" value="female">Female</div>
+        </div>
+        <div>
+        	<div class="left"><label for="age">Age</label></div><div class="right"><input type="number" name="age" min="1" max="130" required></div>
+        </div>
+        <div>
+        	<div class="left"><label for="birthdate">Date of Birth</label></div><div class="right"><input type="date" name="birthdate"></div>
+        </div>
+        <div>
+        	<div class="left"><label for="favcolor">Favorite Color</label></div><div class="right"><input type="color" name="favcolor"></div>
+        </div>
+        <div>
+        	<div class="left">
+              <label for="countries">Country</label></div>
+              <div class="right"><select name="countries">
                   <option value="Argentina">Argentina</option>
                   <option value="Australia">Australia</option>
                   <option value="Azerbaijan">Azerbaijan</option>
@@ -82,42 +102,43 @@
                   <option value="Bolivia">Bolivia</option>
                   <option value="Canada">Canada</option>
               </select>
-            </td>
-        </tr>
+            </div>
+        </div>
        </table>
     </fieldset>
     <fieldset>
     <legend>Your Indicators</legend>
     	<table>
-        	<tr>
-            	<td class="left"><label for="height">Height</label></td><td class="right"><span class="minimum">Short</span><input type="range" name="height" min="0" max="100"><span class="maximum">Tall</span></td>
-            </tr>
-            <tr>
-            	<td class="left"><label for="salary">Salary</label></td><td class="right"><span class="minimum">Poor</span><input type="range" name="salary" min="0" max="100"><span class="maximum">Rich</span></td>
-            </tr>
+        	<div>
+            	<div class="left"><label for="height">Height</label></div><div class="right"><span class="minimum">Short</span><input type="range" name="height" min="0" max="100"><span class="maximum">Tall</span></div>
+            </div>
+            <div>
+            	<div class="left"><label for="salary">Salary</label></div><div class="right"><span class="minimum">Poor</span><input type="range" name="salary" min="0" max="100"><span class="maximum">Rich</span></div>
+            </div>
         </table>
     </fieldset>
     <fieldset>
     <legend>Your Contact Information</legend>
     <table>
-    	<tr>
-        	<td class="left"><label for="email">Email</label></td><td class="right"><input type="email" name="email" required></td>
-        </tr>
-        <tr>
-        <td class="left"><label for="mobile">Mobile</label></td><td class="right"><input type="tel" name="mobile"></td>
-        </tr>
-        <tr>
-        <td class="left"><label for="address">Address</label></td><td class="right"><textarea name="address" cols="50" rows="5"></textarea><br></td>
-        </tr>
-        <tr>
-        <td class="left"><label for="contact">Method to Contact You</label></td><td class="right"><input type="checkbox" name="contact" value="email">Email 
+    	<div>
+        	<div class="left"><label for="email">Email</label></div><div class="right"><input type="email" name="email" required></div>
+        </div>
+        <div>
+        <div class="left"><label for="mobile">Mobile</label></div><div class="right"><input type="tel" name="mobile"></div>
+        </div>
+        <div>
+        <div class="left"><label for="address">Address</label></div><div class="right"><textarea name="address" cols="50" rows="5"></textarea><br></div>
+        </div>
+        <div>
+        <div class="left"><label for="contact">Method to Contact You</label></div><div class="right"><input type="checkbox" name="contact" value="email">Email 
       	<input type="checkbox" name="contact" value="whatsapp">WhatsApp
-      	<input type="checkbox" name="contact" value="in-app">In-app Chat</td>
-        </tr>
+      	<input type="checkbox" name="contact" value="in-app">In-app Chat</div>
+        </div>
       </table>
     </fieldset>
       <input type="submit" value="Submit">
     </form>
+    </div>
     <script src="https://www.cse.ust.hk/~rossiter/dating_web_site.js"></script>
   </body>
 </html>
