@@ -24,6 +24,14 @@
 		padding:2px;		
 		background-color:#303;	
 	}
+	.left{
+		width:30%;
+		float:left;
+	}
+	.right{
+		width:68%;
+		float:left;
+	}
   </style>
   </head>
   <body>
@@ -31,8 +39,12 @@
     <form enctype="multipart/fomr-data" id="details-form" method="post" action="http://ihome.ust.hk/~rossiter/cgi-bin/show_everything.php">
     <fieldset>
     <legend>Your Face</legend>
-      <label for="avatar">Your Image</label>
-      <input type="file" name="avatar"><br>
+    	<div class="left">>
+      		<label for="avatar">Your Image</label>
+      	</div>
+      	<div class="right">
+      		<input type="file" name="avatar"><br>
+      	</div>
       <img id="preview" src="no_pic.jpg" alt="Picture of the persone" required>
     </fieldset>
     <fieldset>
