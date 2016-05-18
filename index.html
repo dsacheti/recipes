@@ -3,6 +3,49 @@
 <head>
 <meta charset="utf-8">
 <title>Recipes - Begin</title>
+    <style>
+        nav{
+            background: aliceblue;
+            width: 40%;
+        }
+        nav ul{
+            list-style-type: none;
+            line-height: 25px;
+        }
+        h1{
+            background-color: #8fafff;
+            color:darkblue;
+            text-align: center;           
+        }
+        h1,h2,h3,h4,h5{
+             font-family: sans-serif;
+        }
+        h3{
+            color:tomato
+        }
+        h4{
+            color:#aa0303;
+        }
+        h5{
+            color:blue;
+        }
+        img{
+            width:  250px;
+        }
+        article,hr{
+            margin-left: 30px;
+        }
+        .ingredients{
+            list-style-image: url(images/spoon.png);
+            line-height: 30px;
+        }
+        ol{
+            line-height: 35px;
+        }
+        p{
+            font-style: italic;
+        }
+    </style>
 </head>
 
 <body>
@@ -16,23 +59,15 @@
             <li><a href="#venison-chili">Venison Chili</a></li>
             </ul>
         </nav>
-    </header>
-    <section>
-    	<h2>Here we show how to make the tastiest chemistry</h2>
-		<ol>
-    		<li>You need a kitchen</li>
-        	<li>Be organized</li>
-        	<li>follow the right steps</li>
-    	</ol>
-   </section>
+    </header>   
    <hr>
    <h2>Recipes</h2>
    <article id="honey-balsamic-chicken">
    		<h3>Honey-Balsamic Chicken</h3>
-        <img src="images/honey-balsamic-chicken.jpg" width="300">
+        <img src="images/honey-balsamic-chicken.jpg">
         <p>From <a href="http://allrecipes.com" target="_blank">allrecipes.com</a></p>
         <h4>Ingredients</h4>
-        <ul>
+        <ul class="ingredients">
         	<li>1/4 cup balsamic vinegar</li>
             <li>1/4 cup olive oil</li>
             <li>1/4 cup honey</li>
@@ -53,10 +88,10 @@
    <hr>
    <article id="pancakes">
    <h3>Good Old Fashioned Pancakes</h3>
-   <img src="images/pancakes.jpg" width="300">
+   <img src="images/pancakes.jpg">
    <p>From <a href="http://allrecipes.com" target="_blank">allrecipes.com</a></p>
    <h4>Ingredients</h4>
-   <ul>
+   <ul class="ingredients">
    		<li>1 1/2 cups all-purpose flour</li>
    		<li>3 1/2 teaspoons baking powder</li>
    		<li>1 teaspoon salt</li>
@@ -73,11 +108,11 @@
    <hr>
    <article id="deep-dish-pizza">
    <h3>Deep-Dish Pizza</h3>
-   <img src="images/deepdishpizza.jpg" width="300">
+   <img src="images/deepdishpizza.jpg">
    <p>From <a href="http://www.cooks.com/" target="_blank">www.cooks.com</a></p>
    <h4>Ingredients</h4>
    <h5>Pasta</h5>
-   <ul>
+   <ul class="ingredients">
    <li>1 pkg. active dry yeast</li>
 <li>1 c. warm water (105 to 115 degrees)</li>
 <li>1 tsp. sugar</li>
@@ -87,7 +122,7 @@
 <li>1/4 c. corn meal</li>
 </ul>
 <h5>Topping</h5>
-<ul>
+<ul class="ingredients">
 	<li>1 lb. hamburger</li>
 	<li>16 oz. can whole tomatoes, drained</li>
 	<li>1 tbsp. minced onion</li>
@@ -122,7 +157,7 @@
    <hr>
    <article id="venison-chili">   
    <h3>Venison Chili</h3>
-   <img src="images/venison-chili.jpg" width="300">
+   <img src="images/venison-chili.jpg">
    <p>From <a href="http://www.cooks.com/" target="_blank">www.cooks.com</a></p>
    <h4>Ingredients</h4>
    <ul>
